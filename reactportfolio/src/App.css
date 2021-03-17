@@ -1,0 +1,321 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-size: 15pt;
+  font-family: 'Open Sans Condensed', sans-serif;
+} 
+/* style for header contents */
+.logo{
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: seashell;
+  font-size: 28px;
+  margin-left: 10px;
+}
+
+ul{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  align-items: stretch;
+  color: seashell;
+}
+
+.active, .endLink {
+  display: flex;
+  margin: 24px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: var(--text-color);
+  font-size: 28px;
+  font-weight: 500;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  color: rgb(17, 17, 19);
+}
+
+
+nav, footer {
+  margin: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;   
+  background-color: rgb(37, 74, 196);
+  box-shadow: 2px 2px 31px 7px rgba(87,170,255,0.8);
+  
+}
+
+/* end styling for header */
+
+
+/* styling for container 1 */
+.container-1{
+
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.c1intro{
+  display: block;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+}
+
+#about, #work{
+  font-size: 36pt;
+  color:rgb(37, 74, 196);
+  text-align: center;
+  display: block;
+  margin: auto;
+  align-content: center;
+}
+
+.aboutMe{
+  display: flex;
+  flex: 1;
+  color:rgb(37, 74, 196);
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin: 50px;
+  flex-direction: column;
+}
+/* end styling for container 1 */
+
+/* styling for container 2 */
+
+.work {
+  color: rgb(37, 74, 196);
+  margin: 30px;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  width: auto;
+  align-items: center;
+  justify-content: space-between;
+      
+}
+
+.project1, .dayPlanner, .converterPage, .randomPw, .moldyMelon, .weatherDash{
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+#pinPointimg, #dayPlanner, #converter, #password, #moldyMelon, #weatherDash{
+  border: 1px solid;
+  border-color:rgb(37, 74, 196);
+  border-radius: 4px;
+  padding: 5px;
+  width: 350px;
+}
+
+#pinPointimg:hover, #dayPlanner:hover, #converter:hover, #password:hover, #moldyMelon:hover, #weatherDash:hover{
+-webkit-box-shadow: -12px 14px 15px 2px #122EFF; 
+box-shadow: -12px 14px 15px 2px #122EFF;
+transition-duration: 0.4s;
+}
+
+#contact{
+  color: seashell;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 36pt;
+  margin: 25px;
+}
+#ham-label, #hamburger{
+  display: none;
+} 
+
+
+@media (min-width: 375px) {
+
+  .container-1, .container-2{
+      min-width: 30rem;
+      text-align: center;
+  }
+
+   nav, footer{
+      height: 100px;
+      margin: 0px;
+      min-width: 30rem;
+      justify-content: space-around;
+  
+  }
+
+
+  .endLink{
+      font-size: 12pt;
+      margin: 10px;
+  }
+
+  #contact{
+      font-size: 10pt;
+      text-align: center;
+  }
+
+  
+
+  .active {
+      text-align: center;
+      font-size: 13pt;
+  }
+    .work{
+      font-size: 300px;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      width: auto;
+  }
+
+  .project1, .dayPlanner, .converterPage{
+      margin-bottom: 15px;
+  }
+
+  .description{
+      margin-bottom: 8px;
+  }
+} 
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+
+  .container-1, .container-2{
+      min-width: 30rem;
+      text-align: center;
+  }
+
+   nav, footer{
+      height: 100px;
+      margin: 0px;
+      min-width: 30rem;
+      justify-content: space-around;
+  
+  }
+
+
+  .endLink{
+      font-size: 10pt;
+      margin: 10px;
+  }
+
+  #contact{
+      font-size: 10pt;
+      text-align: center;
+  }
+
+  
+
+  .active {
+      text-align: center;
+      font-size: 10pt;
+  }
+    .work{
+      font-size: 300px;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      width: auto;
+  }
+
+  .project1, .dayPlanner, .converterPage{
+      margin-bottom: 15px;
+  }
+
+  .description{
+      margin-bottom: 8px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .container-1, .container-2{
+      min-width: 33rem;
+      text-align: center;
+  }
+
+  .work{
+      font-size: 300px;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      width: auto;
+  }
+
+   nav, footer{
+      height: 100px;
+      margin: 0px;
+      min-width: 33rem;
+      justify-content: space-around;
+  
+  }
+
+  footer{
+      margin-top: 100px;
+  }
+  
+  .active, .endLink {
+      text-align: center;
+      font-size: 11pt;
+  }
+
+  .endLink{
+      margin: 5px;
+      text-align: left;
+  }
+  #contact{
+      font-size: 12pt;
+      margin: 0px;
+  }
+  
+  .project1, .dayPlanner, .converterPage{
+      margin-bottom: 15px;
+  }
+  
+  .description{
+      margin-bottom: 8px;
+  } 
+
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  .container-1, .container-2{
+      min-width: 42rem;
+      text-align: center;
+  }
+  nav, footer{
+      height: 100px;
+      margin: 0px;
+      min-width: 42rem;
+      justify-content: space-between;
+  
+  }
+  .work{
+      font-size: 300px;
+      display: flex;
+      flex-direction: column
+  }
+  .active, .endLink, #contact {
+      text-align: center;
+      font-size: 14pt;
+  }
+}
+
+@media (min-width: 1100px) {
+  .work{
+      flex-direction: row;
+  }
+}
+
+
+
+
+
+
+
