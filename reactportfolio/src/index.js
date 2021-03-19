@@ -1,20 +1,25 @@
-import React from 'react';
+import React from "react";
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from './components/navbar';
-import Navbar from 'react-bootstrap/esm/Navbar';
-import Container from './components/container';
-import container from 'react-bootstrap/Container';
+import Navigate from './components/navbar';
+import AboutMe from "./components/container";
+import Projects from "./components/project";
+
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <AppContainer>
-      
+      <Navigate />
+      <AboutMe />
+      <Projects />
 
-    </AppContainer>
+    
+
+    
+
+
    
   </React.StrictMode>,
   document.getElementById('root')
