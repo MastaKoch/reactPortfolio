@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.projectDiv{
+  color: "grey";
+  margin-bottom: "30px"
+}

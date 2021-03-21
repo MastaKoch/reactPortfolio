@@ -1,16 +1,66 @@
 import React, {Component} from "react";
 import Container from 'react-bootstrap/Container';
 import Jumbotron from 'react-bootstrap/Jumbotron'
+import Carousel from 'react-bootstrap/Carousel';
+import alexRest from '../imgs/alexRestaurant.jpeg';
+import alexHanky from '../imgs/alexHankPup.jpeg';
+import couple from '../imgs/alexClaudia.jpeg';
+
+
+const contStyle = {
+    color: 'white',
+    background: 'grey'
+};
+
+const pic= {
+    height: "30%",
+    width: "30%"
+};
+
+
 
 
 
 class AboutMe extends Component {
 
+
+
     render() {
         return (
-            <Jumbotron fluid>
+            <div>
+
+                
+            <Jumbotron fluid style={contStyle} >
                 <Container>
                     <h1>About Me</h1>
+                    <Carousel fade>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src= {alexRest}
+      alt="First slide"
+      style={pic}
+    />
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={alexHanky}
+      alt="Second slide"
+      style={pic}
+    />
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={couple}
+      alt="Third slide"
+      style = {pic}
+    />
+
+  </Carousel.Item>
+</Carousel>
+
                     <code>Hello World!</code>
                     <p>
                     After completing the CCMSI-U internship program upon graduation from Clemson University, I was ready to navigate the world of Workers' Comp and Insurance Claims. I immersed myself in claims, all while helping set up our start-up office in the Queen City. I set up computers, phone lines, internet servers, desks and seating arrangements all while training to become an adjuster. During my time as an adjuster-in-training, I became the non-official IT "go-to" guy. With the help of the IT team, I learned the ropes when it came to helping the office with their technology challenges, all while preparing for the world of insurance. I took great pride in assisting the office with technology despite working as an adjuster.
@@ -24,6 +74,9 @@ class AboutMe extends Component {
        
                 </Container>
             </Jumbotron>
+
+            
+            </div>
         )
 
     }
