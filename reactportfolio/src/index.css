@@ -16,3 +16,30 @@ code {
   color: "grey";
   margin-bottom: "30px"
 }
+
+.footerDiv, .project{
+  text-align: center;
+  
+}
+
+.jumbotron{
+  margin-top: 30px;
+}
+
+.jumboColor{
+  background-color: grey;
+}
+
+.projectText{
+  color: white;
+  text-align: center;
+}
+
+.captions, .itemCarousel{
+  display: flex;
+  flex-direction: row;
+}
+
+.pic{
+  margin-bottom: 200px;
+}
