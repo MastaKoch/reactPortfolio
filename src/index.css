@@ -56,3 +56,8 @@ code {
   align-items: center;
   color: white;
 }
+
+.aTag{
+  text-decoration: none;
+  color: black;
+}
