@@ -33,8 +33,8 @@ class Projects extends Component {
     <h1 className="projectText">Projects</h1>
     <Carousel fluid className="carousel">
    
-  <Carousel.Item className="itemCarousel">
-  <Carousel.Caption classname="captions">
+  <Carousel.Item>
+  <Carousel.Caption>
       <h3>Base64 Encoder</h3>
       <p>Link to deployed application: <span><a href="https://mastakoch.github.io/base64Encoder/" style={linkStyle}>Click Me!</a></span></p>
       <p>Link to Github page: <span><a href="https://github.com/MastaKoch/base64Encoder" style={linkStyle}>Click Me!</a></span></p>
