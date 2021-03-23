@@ -41,7 +41,7 @@ code {
   text-align: center;
 }
 
-.captions, .itemCarousel{
+.captions{
   display: flex;
   flex-direction: row;
 }
