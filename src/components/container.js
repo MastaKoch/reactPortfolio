@@ -62,7 +62,7 @@ class AboutMe extends Component {
   </Carousel.Item>
 </Carousel>
 
-                    <code className="codeClass">Hello World</code>
+                    <code className="codeClass">Hello World...</code>
                     <p>
                     After completing the CCMSI-U internship program upon graduation from Clemson University, I was ready to navigate the world of Workers' Comp and Insurance Claims. I immersed myself in claims, all while helping set up our start-up office in the Queen City. I set up computers, phone lines, internet servers, desks and seating arrangements all while training to become an adjuster. During my time as an adjuster-in-training, I became the non-official IT "go-to" guy. With the help of the IT team, I learned the ropes when it came to helping the office with their technology challenges, all while preparing for the world of insurance. I took great pride in assisting the office with technology despite working as an adjuster.
                     </p>
